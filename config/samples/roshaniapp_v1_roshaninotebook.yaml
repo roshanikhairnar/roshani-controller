@@ -1,0 +1,6 @@
+apiVersion: roshaniapp.roshani/v1
+kind: RoshaniNotebook
+metadata:
+  name: roshaninotebook-sample
+spec:
+  # TODO(user): Add fields here

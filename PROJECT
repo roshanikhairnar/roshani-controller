@@ -1,0 +1,16 @@
+domain: roshani
+layout:
+- go.kubebuilder.io/v3
+projectName: roshani-controller
+repo: roshani/roshani-controller
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: roshani
+  group: roshaniapp
+  kind: RoshaniNotebook
+  path: roshani/roshani-controller/api/v1
+  version: v1
+version: "3"

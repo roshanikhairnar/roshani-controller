@@ -1,0 +1,20 @@
+# permissions for end users to view roshaninotebooks.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: roshaninotebook-viewer-role
+rules:
+- apiGroups:
+  - roshaniapp.roshani
+  resources:
+  - roshaninotebooks
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - roshaniapp.roshani
+  resources:
+  - roshaninotebooks/status
+  verbs:
+  - get
